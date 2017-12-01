@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./fontstwo/iconfont.css">
+    <link rel="stylesheet" href="./base/reset.css">
+    <link rel="stylesheet" href="./base/swiper-3.3.1.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html,
+        body,
+        .wrap {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+        
+        body {
+            box-sizing: border-box;
+        }
+        
+        header {
+            width: 100%;
+            height: 3rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 2px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        header span {
+            line-height: 3rem;
+        }
+        
+        header img,
+        header span {
+            margin: 2px 5px;
+        }
+        
+        .sec {
+            padding: 5px;
+        }
+        
+        h3 {
+            height: 3rem;
+            line-height: 3rem;
+            text-align: center;
+        }
+        
+        .banner ul,
+        .banner ul li,
+        .banner ul li img {
+            width: 100%;
+        }
+        
+        .banner ul {
+            display: flex;
+        }
+        
+        .banner ul li img {
+            height: auto;
+        }
+        
+        .top ul li {
+            height: 2rem;
+            line-height: 2rem;
+        }
+        
+        .first ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .first ul li {
+            width: 25%;
+            text-align: center;
+        }
+        
+        .first ul li span {
+            display: block;
+            text-align: center;
+        }
+        
+        .second li,
+        .third li {
+            height: 3rem;
+            line-height: 3rem;
+        }
+        
+        .fourth dt {
+            height: 3rem;
+            line-height: 3rem;
+            padding-left: 5px;
+        }
+        
+        .fourth dd {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .fourth dd span {
+            width: 30%;
+            display: block;
+            text-align: center;
+            height: 2rem;
+            line-height: 2rem;
+        }
+        
+        .fourth ol {
+            display: flex;
+        }
+    </style>
+    <script src="./base/jquery-1.8.3.min.js">
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <img src="./img/header.png" alt="">
+            <span><i class="iconfont">&#xe729;</i><i class="iconfont">&#xe6eb;</i></span>
+        </header>
+        <div class="sec">
+            <div class="banner swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><img src="./img/banner (1).jpg" alt=""></li>
+                    <li class="swiper-slide"><img src="./img/banner (2).jpg" alt=""></li>
+                    <li class="swiper-slide"><img src="./img/banner (3).jpg" alt=""></li>
+                    <li class="swiper-slide"><img src="./img/banner (4).jpg" alt=""></li>
+                    <li class="swiper-slide"><img src="./img/banner (5).jpg" alt=""></li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="top">
+                <ul>
+                    <li>全国———必胜客</li>
+                    <li>关于我航线上支付</li>
+                </ul>
+            </div>
+            <h3>便捷服务</h3>
+            <div class="first">
+                <ul id="list">
+                    <!-- <li><img src="./img/san_03.png"><span>掌上银行下载</span></li>
+                    <li><img src="./img/san_03.png"><span>掌上银行下载</span></li>
+                    <li><img src="./img/san_03.png"><span>掌上银行下载</span></li>
+                    <li><img src="./img/san_03.png"><span>掌上银行下载</span></li>
+                    <li><img src="./img/san_03.png"><span>掌上银行下载</span></li>
+                    <li><img src="./img/san_03.png"><span>掌上银行下载</span></li>
+                    <li><img src="./img/san_03.png"><span>掌上银行下载</span></li>
+                    <li><img src="./img/san_03.png"><span>掌上银行下载</span></li> -->
+                </ul>
+            </div>
+            <h3>您的每段旅程，我们全心陪伴</h3>
+            <div class="second">
+                <ul>
+                    <li>学生时代</li>
+                    <li>学生时代</li>
+                    <li>学生时代</li>
+                    <li>学生时代</li>
+                </ul>
+            </div>
+            <h3>产品服务</h3>
+            <div class="third">
+                <ul>
+                    <li>投资理财</li>
+                    <li>投资理财</li>
+                    <li>投资理财</li>
+                    <li>投资理财</li>
+                </ul>
+            </div>
+            <div class="fourth">
+                <dl>
+                    <dt>关于农行</dt>
+                    <dd>
+                        <span>农行风貌</span>
+                        <span>农行风貌</span>
+                        <span>农行风貌</span>
+                        <span>农行风貌</span>
+                        <span>农行风貌</span>
+                        <span>农行风貌</span>
+                        <span>农行风貌</span>
+                    </dd>
+                    <dt>我们无处不在</dt>
+                </dl>
+                <ol>
+                    <li><img src="./img/icon (1).png" alt=""><span>网上银行</span></li>
+                    <li><img src="./img/icon (1).png" alt=""><span>网上银行</span></li>
+                    <li><img src="./img/icon (1).png" alt=""><span>网上银行</span></li>
+                    <li><img src="./img/icon (1).png" alt=""><span>网上银行</span></li>
+                    <li><img src="./img/icon (1).png" alt=""><span>网上银行</span></li>
+                    <li><img src="./img/icon (1).png" alt=""><span>网上银行</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="./base/swiper-3.3.1.min.js">
+    </script>
+    <script>
+        function ajax(url) {
+            return new Promise(function(resolve, reject) {
+                var xhr = null;
+                var handler = function() {
+                    if (xhr.readyState !== 4) return;
+                    if (xhr.status == 200) {
+                        // resolve(xhr.responseText)
+                        var str = JSON.parse(xhr.responseText);
+                        // console.log(str)
+                        var arr = '';
+                        for (var i in str) {
+                            // console.log(str[i])
+                            arr += '<li>';
+                            arr += '<img src="' + str[i].src + '">';
+                            arr += '<span>' + str[i].span + '</span>';
+                            arr += '</li>'
+                        }
+                        $('#list').html(arr)
+                        var swiper = new Swiper('.banner', {
+                            autoplay: 1000,
+                            loop: true,
+                            pagination: '.swiper-pagination',
+                            autoplayDisableOnInteraction: false
+                        })
+
+                    } else {
+                        reject(new Error(xhr.statusText));
+                    }
+                }
+                if (window.XMLHttpRequest) {
+                    xhr = new XMLHttpRequest();
+                } else {
+                    xhr = new ActiveXObject("Microsoft.XMLHTTP")
+                }
+                xhr.open("GET", url, true);
+                xhr.send();
+                xhr.onreadystatechange = handler;
+            })
+        }
+        ajax("http://localhost:8080/data/").then(function(result) {
+            console.log(JSON.parse(result))
+        }).catch(function(error) {
+            console.log(error)
+        });
+    </script>
+</body>
+
+</html>
